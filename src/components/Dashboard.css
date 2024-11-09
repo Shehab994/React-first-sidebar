@@ -1,0 +1,187 @@
+.container {
+    background-color: #F2F5FA;
+    height: 100vh;
+}
+
+.dashboard {
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    padding: 1rem;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.dashboard.hide {
+    width: 65px;
+}
+
+.dashboard ul li span {
+    transition: .3s ease-in-out;
+}
+
+.dashboard.hide ul li span {
+    margin-left: 2rem;
+}
+
+.dashboard.hide .logo {
+    margin-left: -65px;
+}
+
+.dashboard.hide .dropdown button .btn span {
+    margin-left: 2rem;
+}
+
+.dashboard.hide ul li span {
+    margin-left: 2rem;
+}
+
+.dashboard .logo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: #20242b;
+    transition: .3s;
+    width: 100%;
+}
+
+.dashboard .logo span {
+    font-weight: 500;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+    color: #149FFC;
+    ;
+}
+
+.dashboard .logo i {
+    cursor: pointer;
+    z-index: 2222;
+    transform: rotate(180deg);
+    background-color: #E0F2FE;
+    padding: .3rem .5rem;
+    border-radius: 50%;
+    color: #149FFC;
+    transition: .3s;
+}
+
+.dashboard .logo i.rotate {
+    transform: rotate(0);
+}
+
+.dashboard ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    /* margin-top: 1rem; */
+}
+
+.dashboard li,
+.dashboard .dropdown button {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 15px;
+    /* font-weight: 600; */
+    color: #5c5c5c;
+    cursor: pointer;
+    width: 100%;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+
+}
+
+.dashboard ul li:hover {
+    color: #149FFC;
+    background-color: #E0F2FE;
+}
+
+.dashboard ul li i {
+    font-size: 1.2rem;
+}
+
+.dashboard .dropdown button:hover {
+    color: #149FFC;
+    background-color: #E0F2FE;
+}
+
+.dashboard .dropdown button {
+    justify-content: space-between;
+}
+
+.dashboard .dropdown button i {
+    transition: .3s;
+    font-size: 1.2rem;
+}
+
+.dashboard .dropdown button i:last-child {
+
+    font-size: .9rem;
+}
+
+.dashboard .dropdown button i.active {
+    transform: rotate(180deg);
+}
+
+.dashboard .dropdown button .btn {
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+}
+
+.dashboard .dropdown button.active {
+    color: #149FFC;
+}
+
+.dashboard ul li.active {
+    color: #149FFC;
+}
+
+.dashboard .dropdown button .btn span {
+    /* background-color: rebeccapurple; */
+    width: 4.5rem;
+    transition: .3s ease-in-out;
+    text-align: start;
+}
+
+.dashboard .dropdown ul div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.dashboard .dropdown .sub-menu {
+    margin-left: 1.8rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .3s ease-in-out;
+}
+
+.dashboard .dropdown .sub-menu.show {
+
+    grid-template-rows: 1fr;
+}
+
+
+
+.dashboard .dropdown button {
+    background: none;
+    border: none;
+}
+
+.dashboard ul {
+    position: relative;
+}
+
+.dashboard ul .indicator-bar {
+    position: absolute;
+    height: 1.3rem;
+    width: 3px;
+    background-color: #149FFC;
+    top: 8px;
+    transition: .3s;
+}
